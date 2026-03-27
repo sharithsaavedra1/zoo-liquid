@@ -1,2 +1,0 @@
-DROP TABLE IF EXISTS historial_medico CASCADE;
-GO

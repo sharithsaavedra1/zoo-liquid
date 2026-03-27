@@ -1,2 +1,0 @@
-DROP TABLE IF EXISTS habitats CASCADE;
-GO
