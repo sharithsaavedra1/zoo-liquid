@@ -1,0 +1,50 @@
+- changeSet:
+    id: 00005_inserts
+    author: sharith@misena.edu.co
+    context: zoo
+    labels: HU-01
+    comment: Insert data historial_medico
+    changes:
+      - tagDatabase:
+          tag: v1.1.4
+      - sqlFile:
+          path: 09_inserts/0005_insert_historial_medico.sql
+          endDelimiter: \nGO
+          stripComments: false
+    rollback:
+      - sqlFile:
+          path: 11_rollbacks/09_inserts/0005_insert_historial_medico.sql
+
+    - changeSet:
+        id: 00006_inserts
+        author: sharith@misena.edu.co
+        context: zoo
+        labels: HU-01
+        comment: Insert data alimentacion
+        changes:
+          - tagDatabase:
+              tag: v1.1.5
+          - sqlFile:
+              path: 09_inserts/0006_insert_alimentacion.sql
+              endDelimiter: \nGO
+              stripComments: false
+        rollback:
+          - sqlFile:
+              path: 11_rollbacks/09_inserts/0006_insert_alimentacion.sql
+
+    - changeSet:
+        id: 00007_inserts
+        author: sharith@misena.edu.co
+        context: zoo
+        labels: HU-01
+        comment: Insert data visitas
+        changes:
+          - tagDatabase:
+              tag: v1.1.6
+          - sqlFile:
+              path: 09_inserts/0007_insert_visitas.sql
+              endDelimiter: \nGO
+              stripComments: false
+        rollback:
+          - sqlFile:
+              path: 11_rollbacks/09_inserts/0007_insert_visitas.sql

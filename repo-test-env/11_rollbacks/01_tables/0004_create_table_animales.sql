@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS animales CASCADE;
+GO
